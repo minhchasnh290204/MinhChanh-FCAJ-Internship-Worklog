@@ -6,8 +6,6 @@ chapter: false
 pre: " <b> 7. </b> "
 ---
 
-> Ở đây, em tự do chia sẻ các ý kiến cá nhân về trải nghiệm tham gia chương trình First Cloud AI Journey (FCAJ). Điều này sẽ giúp đội ngũ FCAJ cải thiện dựa trên các khía cạnh sau:
-
 ### Chia sẻ & đóng góp dự án
 
 **1. Môi trường học tập và làm việc**  
