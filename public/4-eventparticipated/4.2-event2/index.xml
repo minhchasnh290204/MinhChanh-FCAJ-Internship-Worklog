@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
 		<title>Bài thu hoạch “AWS First Cloud AI Journey Community Day - June 2026 on Báo cáo thực tập</title>
-		<link>https://minhchasnh290204.github.io/MinhChanh-FCAJ-Internship-Worklog/4-eventparticipated/4.2-event2/</link>
+		<link>http://localhost:65175/MinhChanh-FCAJ-Internship-Worklog/4-eventparticipated/4.2-event2/</link>
 		<description>Recent content in Bài thu hoạch “AWS First Cloud AI Journey Community Day - June 2026 on Báo cáo thực tập</description>
 		<generator>Hugo</generator>
 		<language>vi</language>
@@ -12,6 +12,6 @@
 		
 			<lastBuildDate></lastBuildDate>
 		
-			<atom:link href="https://minhchasnh290204.github.io/MinhChanh-FCAJ-Internship-Worklog/4-eventparticipated/4.2-event2/index.xml" rel="self" type="application/rss+xml" />
+			<atom:link href="http://localhost:65175/MinhChanh-FCAJ-Internship-Worklog/4-eventparticipated/4.2-event2/index.xml" rel="self" type="application/rss+xml" />
 	</channel>
 </rss>
