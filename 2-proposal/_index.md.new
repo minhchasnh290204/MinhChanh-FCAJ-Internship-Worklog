@@ -1,0 +1,170 @@
+---
+title: "Proposal"
+date: 2024-01-01
+weight: 2
+chapter: false
+pre: " <b> 2. </b> "
+---
+{{% notice warning %}}
+⚠️ **Note:** The information below is for reference purposes only. Please **do not copy verbatim** for your report, including this warning.
+{{% /notice %}}
+
+In this section, you will find the Capstone Project proposal for building a Team Task Management application on AWS cloud infrastructure.
+
+# Team Task Management System on AWS
+## A Cloud-Native Solution for Collaborative Team Workflow
+
+### 1. Executive Summary
+The Team Task Management system is a web-based application designed to help teams efficiently manage their collaborative work. The solution addresses the challenge of scattered task management in group work by providing a centralized platform with automated deadline notifications. Built on AWS, the architecture demonstrates best practices for cloud application design including frontend distribution, private backend infrastructure, and serverless automation.
+
+### 2. Problem Statement
+
+#### 2.1 What's the Problem?
+In team collaboration, managing tasks through scattered messages, personal notes, or separate files easily causes confusion. Project managers struggle to track who is doing what, which tasks are approaching deadlines, which are completed, or which are overdue. Without automatic reminders, team members can miss deadlines, impacting overall project progress. Additionally, when deploying web applications to the cloud, exposing backend and database directly to the internet creates significant security risks.
+
+#### 2.2 Proposed Solution  
+The solution builds a team task management platform on AWS featuring:
+- **Web interface** for users to login, create tasks, assign tasks, update status, and track progress
+- **Private backend infrastructure** with EC2 in private subnets, restricting direct internet access
+- **Secure API access** through CloudFront and API Gateway
+- **Automated deadline checking** using EventBridge Scheduler to trigger Lambda functions
+- **Email notifications** via Amazon SES for deadline reminders
+- **Scalable architecture** supporting multiple users and teams
+
+### 3. Solution Architecture
+
+The architecture is divided into four main layers:
+
+#### 3.1 User Access Layer
+- Users access the application through CloudFront domain
+- Frontend static files distributed via CloudFront from Amazon S3
+- AWS WAF protects against malicious requests
+
+#### 3.2 API Layer
+- API Gateway provides public endpoints
+- VPC Link connects API Gateway to Internal Application Load Balancer
+- Internal ALB routes requests to EC2 backend in private subnet
+
+#### 3.3 Backend Layer  
+- Node.js/Express backend runs on EC2 in private subnet
+- Processes business logic for task management
+- Implements deadline checking via Lambda API calls
+- Sends email notifications through Amazon SES
+
+#### 3.4 Data & Automation Layer
+- Amazon RDS PostgreSQL stores user, task, and deadline data
+- EventBridge Scheduler triggers Lambda on daily schedule
+- Lambda calls internal deadline-check API endpoint
+- Amazon SES sends deadline reminder emails
+
+### 4. AWS Services Used
+
+| Service | Role in Project |
+| --- | --- |
+| Amazon VPC | Private network environment with public/private subnets |
+| Amazon EC2 | Backend Node.js/Express server |
+| Amazon RDS PostgreSQL | Application database |
+| Internal ALB | Routes internal traffic to EC2 |
+| Amazon API Gateway | Public API endpoint management |
+| Amazon S3 | Frontend static file storage |
+| Amazon CloudFront | Frontend distribution and HTTPS |
+| Amazon SES | Email deadline notifications |
+| AWS Lambda | Automated deadline check triggering |
+| Amazon EventBridge Scheduler | Daily scheduled triggers |
+| AWS WAF | Request protection and filtering |
+
+### 5. Component Design
+
+#### 5.1 Frontend
+- Kanban task board interface
+- User login screen  
+- Task creation and assignment forms
+- Email notification history viewer
+- Built with modern web framework, deployed to S3/CloudFront
+
+#### 5.2 Backend
+- Node.js/Express API server
+- User authentication and authorization
+- Task CRUD operations
+- Deadline checking logic
+- Runs as systemd service on EC2 for auto-restart
+
+#### 5.3 Database
+- PostgreSQL on Amazon RDS
+- Private subnet, only accessible from backend
+- Stores users, tasks, status, and deadlines
+
+#### 5.4 Email Notification
+- Amazon SES for sending deadline reminder emails
+- Sandbox mode for testing
+- Production setup requires email verification
+
+#### 5.5 Automation
+- Lambda function for deadline checking
+- Calls backend internal API with authentication
+- EventBridge Scheduler runs Lambda daily
+
+### 6. Deployment Timeline
+
+| Timeline | Activities |
+| --- | --- |
+| Week 1 | Requirement analysis, AWS architecture design, code preparation |
+| Week 2 | VPC, subnet, route table, security group, IAM role, RDS setup |
+| Week 3 | Backend deployment on EC2, systemd config, ALB, API Gateway setup |
+| Week 4 | Frontend deployment to S3/CloudFront, SES config, Lambda, EventBridge |
+| Post-deployment | Cost optimization, WAF enhancement, documentation, demo preparation |
+
+### 7. Budget Considerations
+
+For learning and demo purposes, the architecture uses single-AZ design to reduce costs. Key cost components:
+- EC2 compute hours
+- RDS PostgreSQL instance
+- NAT Gateway 
+- Internal ALB
+- API Gateway
+- S3/CloudFront
+- SES emails
+- Lambda executions
+- EventBridge
+- WAF
+
+**Cost Optimization Tips:**
+- Stop/delete unused resources after demo
+- Use single-AZ for learning (not production)
+- Set AWS Budget alerts
+- Enable NAT Gateway and ALB only when testing
+
+### 8. Risk Assessment
+
+| Risk | Impact | Mitigation |
+| --- | --- | --- |
+| EC2 backend failure | High | Use systemd for auto-restart, monitor with CloudWatch |
+| RDS connection issues | High | Check Security Groups, subnet, port 5432, environment variables |
+| API Gateway 503 errors | Medium | Verify VPC Link, ALB listener, Target Group, health checks |
+| SES email failures | Medium | Verify emails, check SES sandbox, review backend logs |
+| CloudFront cache issues | Low | Create invalidation after frontend updates |
+| Cost overruns | Medium | Set AWS Budget alerts, delete unused resources |
+| Malicious requests | Medium | Enable WAF with AWS Managed Rules |
+
+### 9. Key Learning Outcomes
+
+Through this project, participants will understand:
+- How to architect applications with frontend distribution and private backends
+- Importance of VPC subnets and security groups for defense in depth
+- API Gateway and VPC Link for secure internal communication
+- Infrastructure automation using Lambda and EventBridge
+- Best practices for cloud application security with WAF
+- End-to-end deployment of multi-tier applications on AWS
+
+### 10. Demo Scenario
+
+1. Access the Team Task Management app via CloudFront
+2. Login as manager or team member
+3. Manager creates new tasks and assigns to members
+4. Members update task status on Kanban board
+5. Verify task data saved in RDS PostgreSQL
+6. Manually trigger deadline check API to test email flow
+7. Check deadline reminder emails in inbox
+8. Trigger Lambda/EventBridge to demonstrate automation
+9. Explain WAF protection for CloudFront requests
+10. Demonstrate system resilience and security architecture
