@@ -18,13 +18,13 @@ Về tác phong làm việc của bản thân, em luôn luôn cố gắng hoàn 
 
 | STT | Tiêu chí | Tốt | Khá | Trung bình | Yếu | Kém |
 | --- | --- | --- | --- | --- | --- | --- |
-| 1 | Kiến thức và kỹ năng chuyên môn | ☐ | ✅ | ☐ | ☐ | ☐ |
-| 2 | Khả năng học hỏi | ✅ | ☐ | ☐ | ☐ | ☐ |
-| 3 | Tinh thần trách nhiệm | ✅ | ☐ | ☐ | ☐ | ☐ |
-| 4 | Tính chủ động | ☐ | ✅ | ☐ | ☐ | ☐ |
-| 5 | Kỷ luật và tác phong làm việc | ✅ | ☐ | ☐ | ☐ | ☐ |
-| 6 | Kỹ năng giao tiếp | ☐ | ✅ | ☐ | ☐ | ☐ |
-| 7 | Kỹ năng làm việc nhóm | ✅ | ☐ | ☐ | ☐ | ☐ |
-| 8 | Tư duy giải quyết vấn đề | ☐ | ✅ | ☐ | ☐ | ☐ |
-| 9 | Đóng góp vào dự án | ✅ | ☐ | ☐ | ☐ | ☐ |
-| 10 | Đánh giá tổng thể | ✅ | ☐ | ☐ | ☐ | ☐ |
+| 1 | Kiến thức và kỹ năng chuyên môn |  | ✅ |  |  |  |
+| 2 | Khả năng học hỏi | ✅ |  |  |  |  |
+| 3 | Tinh thần trách nhiệm | ✅ |  |  |  |  |
+| 4 | Tính chủ động |  | ✅ |  |  |  |
+| 5 | Kỷ luật và tác phong làm việc | ✅ |  |  |  |  |
+| 6 | Kỹ năng giao tiếp |  | ✅ |  |  |  |
+| 7 | Kỹ năng làm việc nhóm | ✅ |  |  |  |  |
+| 8 | Tư duy giải quyết vấn đề |  | ✅ |  |  |  |
+| 9 | Đóng góp vào dự án | ✅ |  |  |  |  |
+| 10 | Đánh giá tổng thể | ✅ |  |  |  |  |

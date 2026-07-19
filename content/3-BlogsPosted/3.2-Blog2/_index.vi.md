@@ -1,7 +1,7 @@
 ---
 title: "Xây dựng Dashboard quản lý vá lỗi đa tài khoản bằng Kiro – Bài học đắt giá của một Intern về Phát triển theo thông số kỹ thuật"
 date: 2024-01-01
-weight: 1
+weight: 2
 chapter: false
 pre: " <b> 3.2. </b> "
 ---
