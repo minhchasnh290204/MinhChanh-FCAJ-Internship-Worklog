@@ -1,6 +1,6 @@
 baseURL = "https://minhchasnh290204.github.io/MinhChanh-FCAJ-Internship-Worklog/"
 relativeURLs = true
-canonifyURLs = true
+canonifyURLs = false
 
 # Default content language
 defaultContentLanguage = "vi"
