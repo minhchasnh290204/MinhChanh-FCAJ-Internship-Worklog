@@ -8,9 +8,9 @@ pre: " <b> 1.11. </b> "
 
 ### Mục tiêu Tuần 11:
 
-* Phát triển Dự án Capstone
-* Triển khai Team Task Management System
-* Implementation và testing
+* Tham gia sự kiện chuyên môn về AWS và AI.
+* Hoàn thiện các chức năng chính của Capstone Project.
+* Tối ưu và kiểm thử hệ thống trước khi bàn giao.
 
 ### Các nhiệm vụ cần thực hiện trong tuần này:
 

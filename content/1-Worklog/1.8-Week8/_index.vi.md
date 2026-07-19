@@ -8,9 +8,9 @@ pre: " <b> 1.8. </b> "
 
 ### Mục tiêu Tuần 8:
 
-* Học AWS Lambda, API Gateway, DynamoDB
-* Xây dựng ứng dụng Serverless
-* Thực hành tích hợp các dịch vụ
+* Tìm hiểu kiến trúc Serverless trên AWS.
+* Thực hành với Lambda, API Gateway và DynamoDB.
+* Xây dựng API đơn giản bằng các dịch vụ Serverless.
 
 ### Các nhiệm vụ cần thực hiện trong tuần này:
 

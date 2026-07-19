@@ -8,9 +8,9 @@ pre: " <b> 1.3. </b> "
 
 ### Mục tiêu Tuần 3:
 
-* Tìm hiểu dịch vụ lưu trữ và cơ sở dữ liệu
-* Thực hành Amazon S3
-* Thực hành Amazon RDS
+* Tìm hiểu dịch vụ Amazon RDS.
+* Thực hành tạo và kết nối cơ sở dữ liệu trên AWS.
+* Hiểu quy trình quản lý cơ sở dữ liệu trên nền tảng đám mây.
 
 ### Các nhiệm vụ cần thực hiện trong tuần này:
 

@@ -8,9 +8,9 @@ pre: " <b> 1.9. </b> "
 
 ### Mục tiêu Tuần 9:
 
-* Tìm hiểu CloudWatch, CloudTrail, Backup
-* Thực hành giám sát tài nguyên AWS
-* Thực hành sao lưu dữ liệu
+* Tìm hiểu các công cụ giám sát và bảo mật AWS.
+* Thực hành CloudWatch, CloudTrail và Backup.
+* Nắm được quy trình theo dõi và sao lưu hệ thống.
 
 ### Các nhiệm vụ cần thực hiện trong tuần này:
 

@@ -8,10 +8,9 @@ pre: " <b> 1.1. </b> "
 
 ### Mục tiêu Tuần 1:
 
-* Làm quen với các thành viên FCAJ và hiểu cấu trúc chương trình thực tập
-* Hiểu các khái niệm cơ bản về AWS và Cloud Computing
-* Học sử dụng AWS Console và AWS CLI
-* Thực hành các dịch vụ AWS cơ bản (IAM, EC2, S3)
+* Tìm hiểu tổng quan về AWS và điện toán đám mây.
+* Làm quen với AWS CLI, IAM, EC2, EBS và S3.
+* Nắm được các khái niệm và thao tác cơ bản trên AWS.
 
 ### Các nhiệm vụ cần thực hiện trong tuần này:
 

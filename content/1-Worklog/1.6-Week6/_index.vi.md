@@ -8,9 +8,9 @@ pre: " <b> 1.6. </b> "
 
 ### Mục tiêu Tuần 6:
 
-* Amazon ECS và Dịch vụ Container
-* Orchestration container
-* Triển khai container trên ECS
+* Tìm hiểu dịch vụ Amazon ECS và EKS.
+* Thực hành triển khai ứng dụng bằng Container.
+* Nắm được quy trình quản lý và vận hành dịch vụ Container.
 
 ### Các nhiệm vụ cần thực hiện trong tuần này:
 

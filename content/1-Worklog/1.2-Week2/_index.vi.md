@@ -8,9 +8,9 @@ pre: " <b> 1.2. </b> "
 
 ### Mục tiêu Tuần 2:
 
-* Học VPC và Mạng
-* Hiểu các khái niệm mạng cơ bản
-* Thực hành cấu hình VPC và subnets
+* Tìm hiểu kiến trúc mạng trên AWS.
+* Thực hành cấu hình VPC, Subnet, Internet Gateway và Security Group.
+* Nắm vững các thành phần mạng cơ bản trong AWS.
 
 ### Các nhiệm vụ cần thực hiện trong tuần này:
 

@@ -8,9 +8,9 @@ pre: " <b> 1.12. </b> "
 
 ### Mục tiêu Tuần 12:
 
-* Hoàn thành Dự án
-* Production deployment
-* Documentation và handover
+* Hoàn thiện Capstone Project và kiểm tra toàn bộ chức năng.
+* Hoàn tất báo cáo thực tập, Worklog và hồ sơ liên quan.
+* Tổng kết chương trình và hoàn thành đợt thực tập.
 
 ### Các nhiệm vụ cần thực hiện trong tuần này:
 

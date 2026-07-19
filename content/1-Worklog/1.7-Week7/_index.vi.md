@@ -8,9 +8,9 @@ pre: " <b> 1.7. </b> "
 
 ### Mục tiêu Tuần 7:
 
-* Tìm hiểu GitHub Actions
-* Xây dựng quy trình CI/CD
-* Triển khai ứng dụng tự động
+* Tìm hiểu quy trình CI/CD với GitHub Actions.
+* Thực hành xây dựng workflow tự động.
+* Nâng cao kỹ năng triển khai và xử lý lỗi ứng dụng.
 
 ### Các nhiệm vụ cần thực hiện trong tuần này:
 

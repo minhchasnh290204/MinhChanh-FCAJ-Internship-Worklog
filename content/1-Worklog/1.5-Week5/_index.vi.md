@@ -8,9 +8,9 @@ pre: " <b> 1.5. </b> "
 
 ### Mục tiêu Tuần 5:
 
-* Tìm hiểu Docker, Container
-* Thực hành tạo Docker Image
-* Triển khai với Amazon ECR
+* Tìm hiểu công nghệ Docker và Container.
+* Thực hành tạo, quản lý Docker Image và Container.
+* Triển khai Docker Image lên Amazon ECR.
 
 ### Các nhiệm vụ cần thực hiện trong tuần này:
 

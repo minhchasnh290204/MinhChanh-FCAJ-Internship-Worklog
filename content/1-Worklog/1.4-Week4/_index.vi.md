@@ -8,9 +8,9 @@ pre: " <b> 1.4. </b> "
 
 ### Mục tiêu Tuần 4:
 
-* Học Route 53, Load Balancer, Auto Scaling và CloudFront
-* Thực hành cấu hình DNS và cân bằng tải
-* Hoàn thành các bài lab liên quan
+* Tìm hiểu Route 53, Load Balancer và CloudFront.
+* Thực hành quản lý tên miền và cân bằng tải.
+* Hiểu cách phân phối nội dung và tối ưu hệ thống trên AWS.
 
 ### Các nhiệm vụ cần thực hiện trong tuần này:
 

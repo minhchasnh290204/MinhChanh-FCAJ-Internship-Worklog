@@ -8,9 +8,9 @@ pre: " <b> 1.10. </b> "
 
 ### Mục tiêu Tuần 10:
 
-* Học AWS CloudFormation
-* Thực hành Infrastructure as Code
-* Chuẩn bị kế hoạch Capstone Project
+* Tìm hiểu Infrastructure as Code với CloudFormation.
+* Thực hành tạo Stack và triển khai tài nguyên tự động.
+* Chuẩn bị kiến thức cho Capstone Project.
 
 ### Các nhiệm vụ cần thực hiện trong tuần này:
 
