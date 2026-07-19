@@ -24,7 +24,7 @@ chapter: false
   </div>
   <aside class="home-profile__media">
     <div class="home-profile__avatar-wrap">
-      <img src="/images/avatar.png" alt="Ảnh đại diện Hà Minh Chánh" />
+      <img src="images/avatar.png" alt="Ảnh đại diện Hà Minh Chánh" />
     </div>
     <p class="home-profile__caption">Hà Minh Chánh<br><small>2280600288</small></p>
   </aside>
