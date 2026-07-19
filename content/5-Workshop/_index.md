@@ -5,27 +5,56 @@ weight: 5
 chapter: false
 pre: " <b> 5. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Note:** The information below is for reference purposes only. Please **do not copy verbatim** for your report, including this warning.
-{{% /notice %}}
 
-# Secure Hybrid Access to S3 using VPC Endpoints
+# Team Task Management System - Capstone Project
 
-#### Overview
+## Project Overview
 
-**AWS PrivateLink** provides private connectivity to AWS services from VPCs and your on-premises networks, without exposing your traffic to the Public Internet.
+The Team Task Management System is a cloud-native web application built on AWS that demonstrates enterprise-grade architecture patterns for team collaboration and workflow automation. This project showcases best practices in security, scalability, and automation using AWS services.
 
-In this lab, you will learn how to create, configure, and test VPC endpoints that enable your workloads to reach AWS services without traversing the Public Internet.
+### Project Objectives
 
-You will create two types of endpoints to access Amazon S3: a Gateway VPC endpoint, and an Interface VPC endpoint. These two types of VPC endpoints offer different benefits depending on if you are accessing Amazon S3 from the cloud or your on-premises location
-+ **Gateway** - Create a gateway endpoint to send traffic to Amazon S3 or DynamoDB using private IP addresses.You route traffic from your VPC to the gateway endpoint using route tables.
-+ **Interface** - Create an interface endpoint to send traffic to endpoint services that use a Network Load Balancer to distribute traffic. Traffic destined for the endpoint service is resolved using DNS.
+- Build a complete web application with frontend, backend, and database components
+- Demonstrate secure architecture with private backend infrastructure
+- Implement automated task deadline notifications
+- Deploy and manage cloud-native applications at scale
+- Integrate multiple AWS services into a cohesive solution
 
-#### Content
+### Architecture Highlights
 
-1. [Workshop overview](5.1-Workshop-overview)
-2. [Prerequiste](5.2-Prerequiste/)
-3. [Access S3 from VPC](5.3-S3-vpc/)
-4. [Access S3 from On-premises](5.4-S3-onprem/)
-5. [VPC Endpoint Policies (Bonus)](5.5-Policy/)
-6. [Clean up](5.6-Cleanup/)
+The project implements a four-layer architecture:
+
+1. **User Access Layer**: CloudFront distribution with WAF protection
+2. **API Layer**: API Gateway with VPC Link to Internal ALB
+3. **Backend Layer**: Node.js/Express on EC2 in private subnet
+4. **Data & Automation Layer**: RDS PostgreSQL, Lambda, EventBridge, SES
+
+### Key Features
+
+- **Kanban Task Board**: Visual task management interface
+- **User Authentication**: Secure login and role-based access
+- **Automated Notifications**: Email reminders for approaching deadlines
+- **Scalable Architecture**: Auto-scaling capable infrastructure
+- **Security First**: Private backend, WAF protection, security groups
+
+### AWS Services Integrated
+
+- Amazon VPC (networking)
+- Amazon EC2 (compute)
+- Amazon RDS PostgreSQL (database)
+- Amazon API Gateway (API management)
+- Amazon CloudFront (CDN)
+- Amazon S3 (frontend storage)
+- AWS Lambda (automation)
+- Amazon EventBridge (scheduling)
+- Amazon SES (email)
+- AWS WAF (security)
+
+## Workshop Modules
+
+1. [Project Overview](5.1-Workshop-overview)
+2. [Prerequisites & Setup](5.2-Prerequiste/)
+3. [S3 & VPC Configuration](5.3-S3-vpc/)
+4. [On-Premises Integration](5.4-S3-onprem/)
+5. [Security Policies](5.5-Policy/)
+6. [Cleanup & Best Practices](5.6-Cleanup/)

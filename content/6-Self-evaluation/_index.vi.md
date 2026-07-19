@@ -6,35 +6,25 @@ chapter: false
 pre: " <b> 6. </b> "
 ---
 
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
+### Tự đánh giá quá trình thực tập
 
-Trong suốt thời gian thực tập tại **[Tên công ty/tổ chức]** từ **[ngày bắt đầu]** đến **[ngày kết thúc]**, tôi đã có cơ hội học hỏi, rèn luyện và áp dụng kiến thức đã được trang bị tại trường vào môi trường làm việc thực tế.  
-Tôi đã tham gia **[mô tả ngắn gọn dự án hoặc công việc chính]**, qua đó cải thiện kỹ năng **[liệt kê kỹ năng: lập trình, phân tích, viết báo cáo, giao tiếp…]**.  
+Trong suốt thời gian thực tập tại Công ty TNHH Amazon Web Services Viet Nam từ 17/04/2026 đến 10/07/2026, em đã có cơ hội học hỏi, trau dồi và rèn luyện để vận dụng các kiến thức đã học vào Capstone Project và môi trường doanh nghiệp trong tương lai. Trong quá trình thực tập, em được tiếp cận với nhiều dịch vụ của AWS như IAM, EC2, VPC, S3, RDS, CloudFront, Lambda, ECS, CloudWatch và tham gia triển khai các bài lab, workshop cũng như Capstone Project.
 
-Về tác phong, tôi luôn cố gắng hoàn thành tốt nhiệm vụ, tuân thủ nội quy, và tích cực trao đổi với đồng nghiệp để nâng cao hiệu quả công việc.
+Thông qua chương trình đã học, em đã tiếp thu và nâng cao kiến thức về điện toán đám mây, cải thiện các kỹ năng triển khai hệ thống nói chung và trên AWS nói riêng. Các phản xạ trong thời gian dài thực tập như làm việc nhóm, tự nghiên cứu tài liệu, xử lý sự cố và báo cáo tiến độ công việc cũng tiến bộ một cách tích cực. Bên cạnh đó, việc tham gia các buổi workshop và sự kiện của chương trình cũng giúp em mở rộng kiến thức thực tế và có định hướng rõ ràng hơn về lĩnh vực Cloud Computing.
 
-Để phản ánh một cách khách quan quá trình thực tập, tôi xin tự đánh giá bản thân dựa trên các tiêu chí dưới đây:
+Về tác phong làm việc của bản thân, em luôn luôn cố gắng hoàn thành các nhiệm vụ được giao đúng thời hạn, chủ động học hỏi, tuân thủ nội quy của chương trình đề ra và tích cực trao đổi với người hướng dẫn cũng như các thành viên trong nhóm để nâng cao hiệu quả học tập và làm việc.
 
+Để phản ánh khách quan quá trình thực tập, em tự đánh giá bản thân mình theo các tiêu chí sau:
 
-| STT | Tiêu chí                            | Mô tả                                                                                            | Tốt | Khá | Trung bình |
-| --- | ----------------------------------- | ------------------------------------------------------------------------------------------------ | --- | --- | ---------- |
-| 1   | **Kiến thức và kỹ năng chuyên môn** | Hiểu biết về ngành, áp dụng kiến thức vào thực tế, kỹ năng sử dụng công cụ, chất lượng công việc | ✅   | ☐   | ☐          |
-| 2   | **Khả năng học hỏi**                | Tiếp thu kiến thức mới, học hỏi nhanh                                                            | ☐   | ✅   | ☐          |
-| 3   | **Chủ động**                        | Tự tìm hiểu, nhận nhiệm vụ mà không chờ chỉ dẫn                                                  | ✅   | ☐   | ☐          |
-| 4   | **Tinh thần trách nhiệm**           | Hoàn thành công việc đúng hạn, đảm bảo chất lượng                                                | ✅   | ☐   | ☐          |
-| 5   | **Kỷ luật**                         | Tuân thủ giờ giấc, nội quy, quy trình làm việc                                                   | ☐   | ☐   | ✅          |
-| 6   | **Tính cầu tiến**                   | Sẵn sàng nhận feedback và cải thiện bản thân                                                     | ☐   | ✅   | ☐          |
-| 7   | **Giao tiếp**                       | Trình bày ý tưởng, báo cáo công việc rõ ràng                                                     | ☐   | ✅   | ☐          |
-| 8   | **Hợp tác nhóm**                    | Làm việc hiệu quả với đồng nghiệp, tham gia nhóm                                                 | ✅   | ☐   | ☐          |
-| 9   | **Ứng xử chuyên nghiệp**            | Tôn trọng đồng nghiệp, đối tác, môi trường làm việc                                              | ✅   | ☐   | ☐          |
-| 10  | **Tư duy giải quyết vấn đề**        | Nhận diện vấn đề, đề xuất giải pháp, sáng tạo                                                    | ☐   | ✅   | ☐          |
-| 11  | **Đóng góp vào dự án/tổ chức**      | Hiệu quả công việc, sáng kiến cải tiến, ghi nhận từ team                                         | ✅   | ☐   | ☐          |
-| 12  | **Tổng thể**                        | Đánh giá chung về toàn bộ quá trình thực tập                                                     | ✅   | ☐   | ☐          |
-
-### Cần cải thiện
-
-* Nâng cao tính kỹ luật, chấp hành nghiêm chỉnh nội quy của công ty hoặc bất kỳ trong một tổ chức nào
-* Cải thiện trong cách tư duy giải quyết vấn đề
-* Học cách giao tiếp tốt hơn trong giao tiếp hằng ngày và trong công việc, xử lý tình huống
+| STT | Tiêu chí | Tốt | Khá | Trung bình | Yếu | Kém |
+| --- | --- | --- | --- | --- | --- | --- |
+| 1 | Kiến thức và kỹ năng chuyên môn | ☐ | ✅ | ☐ | ☐ | ☐ |
+| 2 | Khả năng học hỏi | ✅ | ☐ | ☐ | ☐ | ☐ |
+| 3 | Tinh thần trách nhiệm | ✅ | ☐ | ☐ | ☐ | ☐ |
+| 4 | Tính chủ động | ☐ | ✅ | ☐ | ☐ | ☐ |
+| 5 | Kỷ luật và tác phong làm việc | ✅ | ☐ | ☐ | ☐ | ☐ |
+| 6 | Kỹ năng giao tiếp | ☐ | ✅ | ☐ | ☐ | ☐ |
+| 7 | Kỹ năng làm việc nhóm | ✅ | ☐ | ☐ | ☐ | ☐ |
+| 8 | Tư duy giải quyết vấn đề | ☐ | ✅ | ☐ | ☐ | ☐ |
+| 9 | Đóng góp vào dự án | ✅ | ☐ | ☐ | ☐ | ☐ |
+| 10 | Đánh giá tổng thể | ✅ | ☐ | ☐ | ☐ | ☐ |

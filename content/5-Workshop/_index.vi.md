@@ -1,33 +1,60 @@
 ---
-title: "Workshop"
+title: "Hội thảo"
 date: 2024-01-01
 weight: 5
 chapter: false
 pre: " <b> 5. </b> "
 ---
 
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
+# Hệ thống Quản lý Nhiệm vụ Nhóm - Dự án Capstone
 
+## Tổng quan dự án
 
-# Đảm bảo truy cập Hybrid an toàn đến S3 bằng cách sử dụng VPC endpoint
+Hệ thống Quản lý Nhiệm vụ Nhóm là một ứng dụng web cloud-native được xây dựng trên AWS, thể hiện các mô hình kiến trúc cấp doanh nghiệp cho cộng tác nhóm và tự động hóa quy trình làm việc. Dự án này giới thiệu các quy tắc thực hành tốt nhất trong bảo mật, khả năng mở rộng và tự động hóa sử dụng các dịch vụ AWS.
 
-#### Tổng quan
+### Mục tiêu dự án
 
-**AWS PrivateLink** cung cấp kết nối riêng tư đến các dịch vụ aws từ VPCs hoặc trung tâm dữ liệu (on-premise) mà không làm lộ lưu lượng truy cập ra ngoài public internet.
+- Xây dựng một ứng dụng web hoàn chỉnh với các thành phần frontend, backend và cơ sở dữ liệu
+- Giới thiệu kiến trúc an toàn với cơ sở hạ tầng backend riêng tư
+- Triển khai thông báo tự động về hạn chót nhiệm vụ
+- Triển khai và quản lý các ứng dụng cloud-native ở quy mô lớn
+- Tích hợp nhiều dịch vụ AWS vào một giải pháp liền mạch
 
-Trong bài lab này, chúng ta sẽ học cách tạo, cấu hình, và kiểm tra VPC endpoints để cho phép workload của bạn tiếp cận các dịch vụ AWS mà không cần đi qua Internet công cộng.
+### Các điểm nổi bật kiến trúc
 
-Chúng ta sẽ tạo hai loại endpoints để truy cập đến Amazon S3: gateway vpc endpoint và interface vpc endpoint. Hai loại vpc endpoints này mang đến nhiều lợi ích tùy thuộc vào việc bạn truy cập đến S3 từ môi trường cloud hay từ trung tâm dữ liệu (on-premise).
-+ **Gateway** - Tạo gateway endpoint để gửi lưu lượng đến Amazon S3 hoặc DynamoDB using private IP addresses. Bạn điều hướng lưu lượng từ VPC của bạn đến gateway endpoint bằng các bảng định tuyến (route tables)
-+ **Interface** - Tạo interface endpoint để gửi lưu lượng đến các dịch vụ điểm cuối (endpoints) sử dụng Network Load Balancer để phân phối lưu lượng. Lưu lượng dành cho dịch vụ điểm cuối được resolved bằng DNS.
+Dự án triển khai kiến trúc bốn lớp:
 
-#### Nội dung
+1. **Lớp Truy cập Người dùng**: CloudFront distribution với WAF protection
+2. **Lớp API**: API Gateway với VPC Link tới Internal ALB
+3. **Lớp Backend**: Node.js/Express trên EC2 ở mạng con riêng
+4. **Lớp Dữ liệu & Tự động hóa**: RDS PostgreSQL, Lambda, EventBridge, SES
 
-1. [Tổng quan về workshop](5.1-Workshop-overview/)
-2. [Chuẩn bị](5.2-Prerequiste/)
-3. [Truy cập đến S3 từ VPC](5.3-S3-vpc/)
-4. [Truy cập đến S3 từ TTDL On-premises](5.4-S3-onprem/)
-5. [VPC Endpoint Policies (làm thêm)](5.5-Policy/)
-6. [Dọn dẹp tài nguyên](5.6-Cleanup/)
+### Tính năng chính
+
+- **Bảng Kanban Nhiệm vụ**: Giao diện quản lý nhiệm vụ trực quan
+- **Xác thực Người dùng**: Đăng nhập an toàn và truy cập dựa trên vai trò
+- **Thông báo Tự động**: Nhắc nhở email cho những hạn chót sắp tới
+- **Kiến trúc Có thể Mở rộng**: Cơ sở hạ tầng có khả năng auto-scaling
+- **Bảo mật Trước hết**: Backend riêng tư, WAF protection, security groups
+
+### Dịch vụ AWS được Tích hợp
+
+- Amazon VPC (mạng)
+- Amazon EC2 (tính toán)
+- Amazon RDS PostgreSQL (cơ sở dữ liệu)
+- Amazon API Gateway (quản lý API)
+- Amazon CloudFront (CDN)
+- Amazon S3 (lưu trữ frontend)
+- AWS Lambda (tự động hóa)
+- Amazon EventBridge (lập lịch)
+- Amazon SES (email)
+- AWS WAF (bảo mật)
+
+## Các Mô-đun Hội thảo
+
+1. [Tổng quan Dự án](5.1-Workshop-overview)
+2. [Chuẩn bị & Thiết lập](5.2-Prerequiste/)
+3. [Cấu hình S3 & VPC](5.3-S3-vpc/)
+4. [Tích hợp On-Premises](5.4-S3-onprem/)
+5. [Chính sách Bảo mật](5.5-Policy/)
+6. [Dọn dẹp & Thực hành Tốt nhất](5.6-Cleanup/)

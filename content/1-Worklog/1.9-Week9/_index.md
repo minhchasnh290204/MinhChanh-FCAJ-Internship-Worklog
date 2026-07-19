@@ -5,24 +5,24 @@ weight: 1
 chapter: false
 pre: " <b> 1.9. </b> "
 ---
-{{% notice warning %}} 
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
+
 
 
 ### Week 9 Objectives:
 
-* Connect and get acquainted with members of First Cloud AI Journey.
-* Understand basic AWS services, how to use the console & CLI.
+* Understand CloudWatch and CloudTrail monitoring
+* Learn logging and system monitoring
+* Practice backup and snapshot operations
 
 ### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCAJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
+| Date | Task | Completion Date | Result | Reference |
+| --- | --- | --- | --- | --- |
+| 12/06/2026 | Understand CloudWatch and CloudTrail | 12/06/2026 | Understood AWS resource monitoring | AWS Study Group |
+| 13-14/06/2026 | Practice viewing logs and tracking CloudWatch | 14/06/2026 | Learned log management | AWS Study Group |
+| 15/06/2026 | Read CloudTrail documentation and AWS security | 15/06/2026 | Understood CloudTrail role | AWS Study Group |
+| 16/06/2026 | Practice creating Alarm and monitoring resources | 16/06/2026 | Successfully created CloudWatch Alarm | AWS Study Group |
+| 17/06/2026 | Understand AWS Backup and Snapshot | 17/06/2026 | Understood data backup strategies | AWS Study Group |
+| 18/06/2026 | Practice creating Snapshot and Backup | 18/06/2026 | Completed Backup lab | AWS Study Group |
 
 
 ### Week 9 Achievements:
