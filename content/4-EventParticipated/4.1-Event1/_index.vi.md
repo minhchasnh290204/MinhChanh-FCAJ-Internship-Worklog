@@ -40,8 +40,7 @@ Kết nối với các chuyên gia Cloud, khám phá những ứng dụng mới 
 
 ![Vé tham gia FCAJ Community Day](/images/v1.jpg)
 
-![Hình ảnh tại sự kiện](/images/v2.jpg)
+![Các diễn giả tại sự kiện](/images/v2.jpg)
 
-
-![Hình ảnh tại sự kiện](/images/v3.jpg)
+![Các phần trình bày tại sự kiện](/images/v3.jpg)
 
