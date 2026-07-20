@@ -7,7 +7,7 @@ pre: " <b> 3. </b> "
 ---
 
 
-Tại đây sẽ là phần liệt kê, giới thiệu các blogs mà các bạn đã đăng trên [AWS Study Group](https://www.facebook.com/groups/awsstudygroupfcj). Ví dụ:
+Tại đây sẽ là phần liệt kê, giới thiệu các blogs mà em và các bạn đã đăng trên [AWS Study Group](https://www.facebook.com/groups/awsstudygroupfcj).
 
 ###  [Blog 1 - GIẢI MÃ APACHE CELEBORN TRÊN AMAZON EMR](3.1-Blog1/)
 Bài viết này chia sẻ phương pháp sử dụng Apache Celeborn làm Dịch vụ xáo trộn từ xa (Remote Shuffle Service - RSS) trên Amazon EMR để tối ưu hóa chi phí (dùng EC2 Spot) và cải thiện hiệu năng xử lý dữ liệu lớn (Big Data) chạy Apache Spark.

@@ -16,10 +16,10 @@ pre: " <b> 1.10. </b> "
 
 | Ngày | Công việc | Ngày hoàn thành | Kết quả thu được | Tài liệu tham khảo |
 | --- | --- | --- | --- | --- |
-| 19/06/2026 | Tìm hiểu AWS CloudFormation và Infrastructure as Code. | 19/06/2026 | Hiểu khái niệm Infrastructure as Code. | AWS Study Group |
-| 20/06/2026 | Đọc tài liệu và thực hành các mẫu CloudFormation cơ bản. | 20/06/2026 | Làm quen với CloudFormation Template. | AWS Study Group |
-| 21/06/2026 | Thực hành tạo Stack và chỉnh sửa Template. | 21/06/2026 | Tạo Stack thành công. | AWS Study Group |
-| 22/06/2026 | Tìm hiểu quy trình triển khai hệ thống bằng CloudFormation. | 22/06/2026 | Hiểu được quy trình triển khai tự động. | AWS Study Group |
-| 23/06/2026 | Thực hành triển khai tài nguyên bằng CloudFormation. | 23/06/2026 | Hoàn thành bài lab theo hướng dẫn. | AWS Study Group |
-| 24/06/2026 | Ôn tập các dịch vụ đã học và chuẩn bị cho dự án cuối khóa. | 24/06/2026 | Tổng hợp kiến thức đã học. | AWS Study Group |
-| 25/06/2026 | Trao đổi với thành viên nhóm về kế hoạch thực hiện Capstone Project. | 25/06/2026 | Hoàn thiện kế hoạch thực hiện dự án. | AWS Study Group |
+| 19/06/2026 | Tìm hiểu AWS CloudFormation và Infrastructure as Code. | 19/06/2026 | Hiểu khái niệm Infrastructure as Code. | [AWS Study Group](https://cloudjourney.awsstudygroup.com) |
+| 20/06/2026 | Đọc tài liệu và thực hành các mẫu CloudFormation cơ bản. | 20/06/2026 | Làm quen với CloudFormation Template. | [AWS Study Group](https://cloudjourney.awsstudygroup.com) |
+| 21/06/2026 | Thực hành tạo Stack và chỉnh sửa Template. | 21/06/2026 | Tạo Stack thành công. | [AWS Study Group](https://cloudjourney.awsstudygroup.com) |
+| 22/06/2026 | Tìm hiểu quy trình triển khai hệ thống bằng CloudFormation. | 22/06/2026 | Hiểu được quy trình triển khai tự động. | [AWS Study Group](https://cloudjourney.awsstudygroup.com) |
+| 23/06/2026 | Thực hành triển khai tài nguyên bằng CloudFormation. | 23/06/2026 | Hoàn thành bài lab theo hướng dẫn. | [AWS Study Group](https://cloudjourney.awsstudygroup.com) |
+| 24/06/2026 | Ôn tập các dịch vụ đã học và chuẩn bị cho dự án cuối khóa. | 24/06/2026 | Tổng hợp kiến thức đã học. | [AWS Study Group](https://cloudjourney.awsstudygroup.com) |
+| 25/06/2026 | Trao đổi với thành viên nhóm về kế hoạch thực hiện Capstone Project. | 25/06/2026 | Hoàn thiện kế hoạch thực hiện dự án. | [AWS Study Group](https://cloudjourney.awsstudygroup.com) |

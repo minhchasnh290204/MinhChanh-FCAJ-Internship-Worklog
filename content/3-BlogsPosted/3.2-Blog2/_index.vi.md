@@ -66,4 +66,4 @@ Cảm ơn mọi người đã theo dõi bài chia sẻ của một Intern! Mọi
 
 ![Kết quả - Bảng điều khiển tuân thủ bản vá nhiều tài khoản được tạo bởi quy trình làm việc thông số kỹ thuật](/images/3-BlogsPosted/3.2-Blog2/page_3_img_2.png)
 
-Toàn bộ source code và các file chỉ đạo mẫu đều được đính kèm tại đây: [AWS Blog - Build a Multi-Account Patch Compliance Dashboard with Kiro Specs](https://aws.amazon.com/vi/blogs/mt/build-a-multi-account-patch-compliance-dashboard-with-kiro-specs/)
+Link bài viết gốc và mã nguồn mình để ở đây nhé: [AWS Blog - Build a Multi-Account Patch Compliance Dashboard with Kiro Specs](https://aws.amazon.com/vi/blogs/mt/build-a-multi-account-patch-compliance-dashboard-with-kiro-specs/)
