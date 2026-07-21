@@ -170,6 +170,7 @@ select[multiple="multiple"]:focus {
 
 #sidebar ul li.visited > a .read-icon {
   color: var(--MENU-VISITED-color);
+  display: inline;
 }
 
 #sidebar hr {

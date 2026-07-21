@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
 		<title>AWS WAF on Internship Report</title>
-		<link>https://minhchasnh290204.github.io/MinhChanh-FCAJ-Internship-Worklog/5-workshop/5.13-aws-waf/</link>
+		<link>http://localhost:1313/MinhChanh-FCAJ-Internship-Worklog/5-workshop/5.13-aws-waf/</link>
 		<description>Recent content in AWS WAF on Internship Report</description>
 		<generator>Hugo</generator>
 		<language>en</language>
@@ -12,6 +12,6 @@
 		
 			<lastBuildDate></lastBuildDate>
 		
-			<atom:link href="https://minhchasnh290204.github.io/MinhChanh-FCAJ-Internship-Worklog/5-workshop/5.13-aws-waf/index.xml" rel="self" type="application/rss+xml" />
+			<atom:link href="http://localhost:1313/MinhChanh-FCAJ-Internship-Worklog/5-workshop/5.13-aws-waf/index.xml" rel="self" type="application/rss+xml" />
 	</channel>
 </rss>
