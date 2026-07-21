@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
 		<title>Target Group và Internal ALB on Báo cáo thực tập</title>
-		<link>http://localhost:1313/MinhChanh-FCAJ-Internship-Worklog/vi/5-workshop/5.8-target-group-and-internal-alb/</link>
+		<link>https://minhchasnh290204.github.io/MinhChanh-FCAJ-Internship-Worklog/vi/5-workshop/5.8-target-group-and-internal-alb/</link>
 		<description>Recent content in Target Group và Internal ALB on Báo cáo thực tập</description>
 		<generator>Hugo</generator>
 		<language>vi</language>
@@ -12,6 +12,6 @@
 		
 			<lastBuildDate></lastBuildDate>
 		
-			<atom:link href="http://localhost:1313/MinhChanh-FCAJ-Internship-Worklog/vi/5-workshop/5.8-target-group-and-internal-alb/index.xml" rel="self" type="application/rss+xml" />
+			<atom:link href="https://minhchasnh290204.github.io/MinhChanh-FCAJ-Internship-Worklog/vi/5-workshop/5.8-target-group-and-internal-alb/index.xml" rel="self" type="application/rss+xml" />
 	</channel>
 </rss>
