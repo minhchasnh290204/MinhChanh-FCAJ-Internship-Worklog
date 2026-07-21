@@ -1,60 +1,54 @@
 ---
-title: "Hội thảo"
-date: 2024-01-01
+title: "Workshop"
+date: 2026-07-20
 weight: 5
 chapter: false
 pre: " <b> 5. </b> "
 ---
 
-# Hệ thống Quản lý Nhiệm vụ Nhóm - Dự án Capstone
+## Tổng quan
 
-## Tổng quan dự án
+Workshop ghi lại cách tôi triển khai ứng dụng quản lý công việc nhóm và tự động nhắc deadline tại AWS region **ap-southeast-1 (Singapore)**. Nội dung được tổ chức thành quy trình có thể thực hiện lại từ chuẩn bị đến triển khai, kiểm thử, giám sát, rà soát chi phí và cleanup.
 
-Hệ thống Quản lý Nhiệm vụ Nhóm là một ứng dụng web cloud-native được xây dựng trên AWS, thể hiện các mô hình kiến trúc cấp doanh nghiệp cho cộng tác nhóm và tự động hóa quy trình làm việc. Dự án này giới thiệu các quy tắc thực hành tốt nhất trong bảo mật, khả năng mở rộng và tự động hóa sử dụng các dịch vụ AWS.
+## Tổng quan kiến trúc
 
-### Mục tiêu dự án
+![Kiến trúc Workshop Team Task Management](/images/2-Proposal/team-task-management-architecture.png)
 
-- Xây dựng một ứng dụng web hoàn chỉnh với các thành phần frontend, backend và cơ sở dữ liệu
-- Giới thiệu kiến trúc an toàn với cơ sở hạ tầng backend riêng tư
-- Triển khai thông báo tự động về hạn chót nhiệm vụ
-- Triển khai và quản lý các ứng dụng cloud-native ở quy mô lớn
-- Tích hợp nhiều dịch vụ AWS vào một giải pháp liền mạch
+> **Lưu ý kiến trúc:** Internal ALB là điểm vào private integration của VPC Link và định tuyến request đến một EC2 target. Tên dịch vụ vẫn là Application Load Balancer, nhưng workshop không sử dụng khả năng phân phối tải cho nhiều instance.
 
-### Các điểm nổi bật kiến trúc
+- **Luồng web:** User → AWS WAF/CloudFront → S3 hoặc API Gateway → VPC Link → Internal ALB private listener → EC2 Target Group → RDS PostgreSQL.
+- **Luồng nhắc hạn:** EventBridge → Lambda → deadline-check API → EC2/RDS → NAT Gateway → Amazon SES → email người dùng.
+- **Ranh giới bảo mật:** Backend và database nằm trong private subnet; Security Group chỉ cho phép các đường kết nối dịch vụ cần thiết.
 
-Dự án triển khai kiến trúc bốn lớp:
+## Kết quả mong đợi
 
-1. **Lớp Truy cập Người dùng**: CloudFront distribution với WAF protection
-2. **Lớp API**: API Gateway với VPC Link tới Internal ALB
-3. **Lớp Backend**: Node.js/Express trên EC2 ở mạng con riêng
-4. **Lớp Dữ liệu & Tự động hóa**: RDS PostgreSQL, Lambda, EventBridge, SES
+- Luồng quản lý task của Manager và Member hoạt động qua frontend HTTPS.
+- EC2/RDS nằm private; API Gateway truy cập backend qua VPC Link và Internal ALB listener.
+- EventBridge, Lambda và SES gửi email nhắc deadline.
+- WAF, CloudWatch, health check và systemd logs cung cấp bảo vệ và minh chứng vận hành.
+- Có thể xóa toàn bộ tài nguyên tính phí theo quy trình cleanup.
 
-### Tính năng chính
+## Cấu trúc Workshop
 
-- **Bảng Kanban Nhiệm vụ**: Giao diện quản lý nhiệm vụ trực quan
-- **Xác thực Người dùng**: Đăng nhập an toàn và truy cập dựa trên vai trò
-- **Thông báo Tự động**: Nhắc nhở email cho những hạn chót sắp tới
-- **Kiến trúc Có thể Mở rộng**: Cơ sở hạ tầng có khả năng auto-scaling
-- **Bảo mật Trước hết**: Backend riêng tư, WAF protection, security groups
+| Chương | Nội dung chính |
+|---|---|
+| [5.1 Giới thiệu](5.1-introduction/) | Bài toán, người dùng, chức năng và kết quả |
+| [5.2 Điều kiện tiên quyết](5.2-prerequisites/) | Tài khoản, công cụ, IAM, region và SES identity |
+| [5.3 Chuẩn bị mã nguồn](5.3-source-code-preparation/) | Cấu trúc repository, biến môi trường và bảo vệ secret |
+| [5.4 Hạ tầng mạng](5.4-network-infrastructure/) | VPC, subnet, IGW, NAT Gateway và route table |
+| [5.5 Nhóm bảo mật](5.5-security-groups/) | Đường mạng least privilege từ ALB đến EC2 và RDS |
+| [5.6 Triển khai RDS PostgreSQL](5.6-rds-postgresql-deployment/) | Database private, kết nối, schema và seed data |
+| [5.7 Triển khai backend EC2](5.7-ec2-backend-deployment/) | IAM Role, Session Manager, Node.js, systemd và health test |
+| [5.8 Target Group và Internal ALB](5.8-target-group-and-internal-alb/) | Điểm vào private trong VPC, target health và định tuyến request đến EC2 |
+| [5.9 API Gateway và VPC Link](5.9-api-gateway-and-vpc-link/) | Private integration, route, deploy, test và kiểm tra 503 |
+| [5.10 Frontend S3 và CloudFront](5.10-s3-and-cloudfront-frontend/) | Upload, khuyến nghị OAC, behavior, HTTPS và cache |
+| [5.11 Amazon SES](5.11-amazon-ses/) | Verify identity, Sandbox, email thủ công và tích hợp backend |
+| [5.12 Lambda và EventBridge Scheduler](5.12-lambda-and-eventbridge-scheduler/) | Deadline check, lịch chạy, log và kết quả email |
+| [5.13 AWS WAF](5.13-aws-waf/) | Managed rule, rate limit, gắn CloudFront và test |
+| [5.14 Logging và Monitoring](5.14-logging-and-monitoring/) | CloudWatch, systemd, target health, metric và alarm |
+| [5.15 Kiểm thử end-to-end](5.15-end-to-end-testing/) | Ma trận test chức năng, tự động hóa, bảo mật và vận hành |
+| [5.16 Tối ưu chi phí](5.16-cost-optimization/) | Tài nguyên demo, nguồn phí theo giờ, Budget và đánh đổi |
+| [5.17 Cleanup](5.17-cleanup/) | Xóa tài nguyên theo phụ thuộc và kiểm tra Billing |
+| [5.18 Kết luận và hướng phát triển](5.18-conclusion-and-future-improvements/) | Kết quả, xử lý lỗi, bài học và bước tiếp theo |
 
-### Dịch vụ AWS được Tích hợp
 
-- Amazon VPC (mạng)
-- Amazon EC2 (tính toán)
-- Amazon RDS PostgreSQL (cơ sở dữ liệu)
-- Amazon API Gateway (quản lý API)
-- Amazon CloudFront (CDN)
-- Amazon S3 (lưu trữ frontend)
-- AWS Lambda (tự động hóa)
-- Amazon EventBridge (lập lịch)
-- Amazon SES (email)
-- AWS WAF (bảo mật)
-
-## Các Mô-đun Hội thảo
-
-1. [Tổng quan Dự án](5.1-Workshop-overview)
-2. [Chuẩn bị & Thiết lập](5.2-Prerequiste/)
-3. [Cấu hình S3 & VPC](5.3-S3-vpc/)
-4. [Tích hợp On-Premises](5.4-S3-onprem/)
-5. [Chính sách Bảo mật](5.5-Policy/)
-6. [Dọn dẹp & Thực hành Tốt nhất](5.6-Cleanup/)

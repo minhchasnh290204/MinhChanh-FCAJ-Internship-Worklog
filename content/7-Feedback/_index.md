@@ -6,8 +6,6 @@ chapter: false
 pre: " <b> 7. </b> "
 ---
 
-> Here, I freely share my personal opinions about my experience participating in the First Cloud AI Journey (FCAJ) program. This will help the FCAJ team improve based on the following aspects:
-
 ### Overall Evaluation
 
 **1. Learning Environment and Workplace**  
