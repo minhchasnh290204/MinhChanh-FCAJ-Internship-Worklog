@@ -18,7 +18,7 @@
 	"title": "Báo cáo thực tập",
 	"tags": [],
 	"description": "",
-	"content": "Báo cáo thực tập Thông tin sinh viên\rHọ và tênHà Minh Chánh\rSố điện thoại0859623731\rEmailminhchasnh2902@gmail.com\rTrườngĐại học Công nghệ Tp.HCM (HUTECH)\rChuyên ngànhCông nghệ thông tin (Công nghệ phần mềm)\rLớp22DTHG7\rCông ty thực tậpCông ty TNHH Amazon Web Services Việt Nam\rVị trí thực tậpWorkforce Bootcamp – First Cloud AI Journey\rThời gian thực tập17/04/2026 - 10/07/2026\rHà Minh Chánh\n2280600288\nNội dung báo cáo 01Nhật ký công việc\r02Bản đề xuất\r03Các bài blogs đã đăng\r04Các sự kiện đã tham gia\r05Hội thảo\r06Tự đánh giá\r07Chia sẻ và đóng góp ý kiến\r"
+	"content": "Báo cáo thực tập Thông tin sinh viên\rHọ và tênHà Minh Chánh\rSố điện thoại0859623731\rEmailminhchasnh2902@gmail.com\rTrườngĐại học Công nghệ Tp.HCM (HUTECH)\rChuyên ngànhCông nghệ thông tin (Công nghệ phần mềm)\rLớp22DTHG7\rCông ty thực tậpCông ty TNHH Amazon Web Services Việt Nam\rVị trí thực tậpWorkforce Bootcamp – First Cloud AI Journey\rThời gian thực tập17/04/2026 - 10/07/2026\rHà Minh Chánh\n2280600288\nNội dung báo cáo 01Nhật ký công việc\r02Bản đề xuất\r03Các bài blogs đã đăng\r04Các sự kiện đã tham gia\r05Hội thảo\r06Tự đánh giá\r07Chia sẻ và đóng góp ý kiến\r08Các tài liệu liên quan\r"
 },
 {
 	"uri": "https://minhchasnh290204.github.io/MinhChanh-FCAJ-Internship-Worklog/vi/3-blogsposted/3.1-blog1/",
@@ -194,6 +194,13 @@
 	"tags": [],
 	"description": "",
 	"content": "Tạo Target Group HTTP:3000 và health check, đăng ký EC2, sau đó tạo Internal ALB listener HTTP:80. Listener này là đích private integration mà API Gateway truy cập thông qua VPC Link. Chỉ tiếp tục khi target ở trạng thái Healthy.\nTarget Group và điểm vào private trong VPC Mặc dù tên dịch vụ AWS là Application Load Balancer, workshop này không dùng ALB để phân phối traffic cho nhiều backend instance. Target Group hiện chỉ có một EC2 instance. Vai trò chính của ALB là cung cấp private listener được VPC Link hỗ trợ và định tuyến request đến backend mà không cần cấp public IP cho EC2.\nTạo instance Target Group trên backend port 3000 và cấu hình health-check path của ứng dụng. Đăng ký EC2 backend; xử lý Security Group, service hoặc health path đến khi target Healthy. Tạo Application Load Balancer loại internal, forward HTTP listener đến Target Group và dùng listener này làm đích private integration của API Gateway. "
+},
+{
+	"uri": "https://minhchasnh290204.github.io/MinhChanh-FCAJ-Internship-Worklog/vi/8-relateddocuments/",
+	"title": "Các tài liệu liên quan",
+	"tags": [],
+	"description": "",
+	"content": "Các tài liệu liên quan Dưới đây là các liên kết tài liệu liên quan đến dự án:\nLink GitHub Workshop: https://github.com/minhchasnh290204/MinhChanh-FCAJ-Internship-Worklog Link GitHub dự án nhóm (Hệ thống quản lý công việc nhóm và tự động nhắc hạn trên AWS - Team Task Management): https://github.com/vominhthuan2004/AWSPROJECT.git Link dự án nhóm sau khi deploy: https://d19mrhimvjha1u.cloudfront.net "
 },
 {
 	"uri": "https://minhchasnh290204.github.io/MinhChanh-FCAJ-Internship-Worklog/vi/1-worklog/1.8-week8/",

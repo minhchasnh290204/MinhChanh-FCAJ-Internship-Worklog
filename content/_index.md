@@ -40,4 +40,5 @@ chapter: false
   <a class="home-nav-item" href="5-workshop/"><span class="home-nav-num">05</span><span class="home-nav-label">Workshop</span></a>
   <a class="home-nav-item" href="6-self-evaluation/"><span class="home-nav-num">06</span><span class="home-nav-label">Self-Evaluation</span></a>
   <a class="home-nav-item" href="7-feedback/"><span class="home-nav-num">07</span><span class="home-nav-label">Sharing & Feedback</span></a>
+  <a class="home-nav-item" href="8-relateddocuments/"><span class="home-nav-num">08</span><span class="home-nav-label">Related Documents</span></a>
 </div>

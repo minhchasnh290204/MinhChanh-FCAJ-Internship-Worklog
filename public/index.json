@@ -18,7 +18,7 @@
 	"title": "Internship Report",
 	"tags": [],
 	"description": "",
-	"content": "Internship Report Student Information\rFull nameHa Minh Chanh\rPhone0859623731\rEmailminhchasnh2902@gmail.com\rUniversityHo Chi Minh City University of Technology (HUTECH)\rMajorInformation Technology (Software Engineering)\rClass22DTHG7\rInternship companyAmazon Web Services Vietnam Co., Ltd.\rInternship positionWorkforce Bootcamp – First Cloud AI Journey\rInternship period17/04/2026 - 10/07/2026\rHa Minh Chanh\n2280600288\nReport Contents 01Work Log\r02Proposal\r03Published Blogs\r04Events Attended\r05Workshop\r06Self-Evaluation\r07Sharing \u0026 Feedback\r"
+	"content": "Internship Report Student Information\rFull nameHa Minh Chanh\rPhone0859623731\rEmailminhchasnh2902@gmail.com\rUniversityHo Chi Minh City University of Technology (HUTECH)\rMajorInformation Technology (Software Engineering)\rClass22DTHG7\rInternship companyAmazon Web Services Vietnam Co., Ltd.\rInternship positionWorkforce Bootcamp – First Cloud AI Journey\rInternship period17/04/2026 - 10/07/2026\rHa Minh Chanh\n2280600288\nReport Contents 01Work Log\r02Proposal\r03Published Blogs\r04Events Attended\r05Workshop\r06Self-Evaluation\r07Sharing \u0026 Feedback\r08Related Documents\r"
 },
 {
 	"uri": "https://minhchasnh290204.github.io/MinhChanh-FCAJ-Internship-Worklog/4-eventparticipated/4.1-event1/",
@@ -194,6 +194,13 @@
 	"tags": [],
 	"description": "",
 	"content": "Create an HTTP:3000 target group and health check, register EC2, then create an Internal ALB with an HTTP:80 listener. The listener is the private integration destination used by API Gateway through VPC Link. Continue only after the target is Healthy.\nTarget group and private VPC entry point Although the AWS service is named Application Load Balancer, this workshop does not use it to distribute traffic across multiple backend instances. The Target Group currently contains one EC2 instance. Its primary role is to expose a supported private listener for API Gateway VPC Link and route requests to that backend without giving EC2 a public IP.\nCreate an instance target group on backend port 3000 and configure the application health-check path. Register the backend EC2 instance and resolve security-group, service, or health-path issues until it is Healthy. Create an internal Application Load Balancer, forward its HTTP listener to this Target Group, and use that listener as the API Gateway private integration destination. "
+},
+{
+	"uri": "https://minhchasnh290204.github.io/MinhChanh-FCAJ-Internship-Worklog/8-relateddocuments/",
+	"title": "Related Documents",
+	"tags": [],
+	"description": "",
+	"content": "Related Documents Here are the links related to the project:\nWorkshop GitHub Repository: https://github.com/minhchasnh290204/MinhChanh-FCAJ-Internship-Worklog Team Project GitHub Repository (Team Task Management and Automated Deadline Reminder System on AWS): https://github.com/vominhthuan2004/AWSPROJECT.git Deployed Team Project: https://d19mrhimvjha1u.cloudfront.net "
 },
 {
 	"uri": "https://minhchasnh290204.github.io/MinhChanh-FCAJ-Internship-Worklog/1-worklog/1.8-week8/",
